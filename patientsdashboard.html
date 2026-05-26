@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>patients Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(90deg, #003A74, #006AD5);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    nav {
+      width: 250px;
+      background-color: #ffffff;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    nav a {
+      display: block;
+      margin-bottom: 15px;
+      color: #003A74;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    main {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #003A74;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    #patientsSubmenu a {
+  font-weight: 500;
+  color: #006AD5;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+ #Submenu a {
+  font-weight: 500;
+  color: #006AD5;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome, patient's dashboard</h1>
+  </header>
+
+  <div class="container">
+    <nav>
+      <a href="patientsdashboard.html">Dashboard</a>
+      <a href="viewprofile.jsp" id="managePatientsToggle">view profile</a>
+      
+
+      
+     
+     <a href="bookappointment.jsp" id="managePatientsToggle">Book appointment</a>
+      
+      <a href="#" id="manageToggle">veiw prescription</a>
+
+      
+    <a href="#">feedback</a>
+      <a href="home.html">Logout</a>
+    </nav>
+
+    <main>
+      <div class="card">
+        <h3>welcome to patient'sdashboard</h3>
+        
+      </div>
+
+      <div class="card">
+        <h3> Alerts</h3>
+        <p>No critical alerts.</p>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Hospital patient Panel
+  </footer>
+
+</body>
+
+</html>
